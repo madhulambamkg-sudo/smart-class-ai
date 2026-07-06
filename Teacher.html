@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Teacher Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  background: #2563eb;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #334155;
+}
+
+.big {
+  font-size: 28px;
+  color: #22c55e;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Teacher Dashboard</h1>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h3>Attendance</h3>
+    <div class="big">92%</div>
+  </div>
+
+  <div class="card">
+    <h3>Engagement</h3>
+    <div class="big">87%</div>
+  </div>
+
+  <div class="card">
+    <h3>Students</h3>
+    <div class="big">28</div>
+  </div>
+
+  <div class="card">
+    <h3>AI Insight</h3>
+    <p>Students perform best in interactive quizzes.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
